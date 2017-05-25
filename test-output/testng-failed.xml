@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]">
+  <test name="**************************SampleTest*************************************(failed)">
     <classes>
-      <class name="email.Open_Webpage">
+      <class name="email.Email_main">
         <methods>
+          <include name="openBrowser"/>
+          <include name="Teardown"/>
           <include name="openWebsite"/>
         </methods>
-      </class> <!-- email.Open_Webpage -->
+      </class> <!-- email.Email_main -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- **************************SampleTest*************************************(failed) -->
+</suite> <!-- Failed suite [Suite1] -->

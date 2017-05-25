@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="email.Open_Webpage">
+      <class name="email.Email_main">
         <methods>
+          <include name="openBrowser"/>
+          <include name="Teardown"/>
           <include name="openWebsite"/>
         </methods>
-      </class> <!-- email.Open_Webpage -->
+      </class> <!-- email.Email_main -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
