@@ -12,7 +12,9 @@ public class Signin extends Teardown{
 			driver.findElement(By.xpath(".//*[@id='identifierNext']/div[2]")).click();
 			Thread.sleep(5000);
 			logger.info("Password Page");
-			driver.findElement(By.xpath(".//*[@id='password']/div[1]/div/div[1]/input")).sendKeys("9160501501");
+			
+			//Add password
+			driver.findElement(By.xpath(".//*[@id='password']/div[1]/div/div[1]/input")).sendKeys("***********");
 //			
 			driver.findElement(By.xpath(".//*[@id='passwordNext']/content/span")).click();
 			
